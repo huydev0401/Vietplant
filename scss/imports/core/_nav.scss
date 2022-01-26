@@ -62,16 +62,12 @@
       bottom: 0;
     }
     li {
-      a,
-      p {
+      a {
         display: inline-block;
         padding: 15px 35px;
         @include text(3.6rem, doM, 1, $black-cl, capitalize);
         cursor: pointer;
         @include transition($t);
-      }
-      p:hover {
-        color: $green-cl;
       }
       a {
         position: relative;
@@ -92,6 +88,18 @@
             @include transform(scale(1));
             @include transform-origin(left);
           }
+          color: $green-cl;
+        }
+      }
+    }
+    .cart {
+      display: inline-flex;
+      a {
+        padding: 15px 35px;
+        @include text(3.6rem, doM, 1, $black-cl, capitalize);
+        cursor: pointer;
+        @include transition($t);
+        &:hover {
           color: $green-cl;
         }
       }
