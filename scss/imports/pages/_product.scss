@@ -1,0 +1,114 @@
+.productpage {
+  .category {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: calc(var(--gap) / 2);
+      margin-bottom: 70px;
+    }
+    &__item {
+      .image {
+        padding-bottom: 47.7%;
+      }
+    }
+    @include sm {
+      &__list {
+        grid-template-columns: 1fr;
+      }
+      &__item {
+        .image {
+          padding-bottom: 29.4%;
+        }
+      }
+    }
+    @include xs {
+      &__list {
+        margin-bottom: 40px;
+      }
+      &__item {
+        .image {
+          padding-bottom: 50.8%;
+        }
+      }
+    }
+  }
+  .product {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: calc(var(--gap) / 2);
+    .control {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .show {
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+        .show-bnt__wrapper {
+          display: flex;
+          align-items: center;
+          height: var(--height-button);
+          .show-btn {
+            cursor: pointer;
+            border: 2px solid $gray-light-cl;
+            height: 100%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:first-child {
+              margin-right: -1px;
+              border-top-left-radius: $r;
+              border-bottom-left-radius: $r;
+            }
+            &:last-child {
+              border-top-right-radius: $r;
+              border-bottom-right-radius: $r;
+            }
+          }
+        }
+        p {
+          @include text(1.8rem, doM, 1, $gray-cl, none);
+        }
+      }
+      .sort-btn {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border: 2px solid $gray-light-cl;
+        border-radius: $r;
+        column-gap: 10px;
+        img {
+          cursor: pointer;
+        }
+        p {
+          @include text(1.8rem, doM, 1, $gray-cl, none);
+          span {
+            color: $green-cl;
+          }
+        }
+      }
+    }
+    @include md {
+      &__list {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @include sm {
+      grid-template-columns: 1fr;
+    }
+    @include xs {
+      .control {
+        flex-direction: column;
+        row-gap: 20px;
+        .sort-btn {
+          width: fit-content;
+        }
+      }
+      &__list {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>News</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
+  </head>
+
+  <!-- Mỗi body của mỗi page nên có class ví dụ homepage, aboutpage, contactpage... -->
+
+  <body class="newpage">
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="./">
+            <img src="./img/logo.svg" alt="" />
+            <div class="brand">
+              <span>Vietplant</span>
+              <span>garden.</span>
+            </div>
+          </a>
+          <h1 class="hidden">Vietplant</h1>
+        </div>
+        <div class="right">
+          <ul class="menu">
+            <li><a href="product.html">Store</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Pages</a></li>
+            <li><a href="new.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="cart">
+              <a href="cart.html">Cart <span class="--green-cl">(2)</span></a>
+              <div class="cart__circle"></div>
+            </div>
+          </ul>
+          <div class="auth">
+            <img src="./img/setting-icon.svg" alt="" />
+            <ul class="auth__menu">
+              <li><a href="account.html" class="link">My Account</a></li>
+              <li><a href="wishlist.html" class="link">Wishlist</a></li>
+              <li><a href="#" class="link">Logout</a></li>
+            </ul>
+          </div>
+          <div class="toggle-menu">
+            <img class="open" src="./img/menu-icon.svg" alt="" />
+            <img class="close" src="./img/close-icon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav-mobile">
+      <div class="container">
+        <ul class="menu-mobile">
+          <li><a href="product.html">Store</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Pages</a></li>
+          <li><a href="new.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="cart">
+            <a href="cart.html">Cart <span class="--green-cl">(2)</span></a>
+          </div>
+        </ul>
+        <div class="auth-mobile">
+          <div class="left">
+            <a href="account.html" class="link account">My Account</a>
+            <a href="wishlist.html" class="link whishlist">Wishlist</a>
+          </div>
+          <div class="right">
+            <p class="link logout">Log Out</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="modal"></div>
+
+    <!-- MAIN -->
+    <main class="mainwrapper">
+      <section class="hero">
+        <h2 class="heading --lg">NEWS</h2>
+        <img src="./img/hero-4.jpg" alt="" />
+      </section>
+      <div class="container">
+        <ul class="breadcrumb">
+          <li class="breadcrumb__item">Home</li>
+          <li class="breadcrumb__item active">News</li>
+          <div class="line"></div>
+        </ul>
+        <section class="popular">
+          <div class="head">
+            <h3 class="heading --lg">Popular</h3>
+            <a href="#" class="view-all">View all</a>
+          </div>
+          <div class="popular__list">
+            <a
+              href="blog.html"
+              class="popular__item"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <div class="popular__image image linear__bg --black-blue">
+                <img src="./img/popular-1.jpg" alt="" />
+              </div>
+              <div class="popular__content textbox --white">
+                <div class="label">
+                  <p><span>By</span> Jonh Someone</p>
+                  <p><span>In</span> Category</p>
+                </div>
+                <h4 class="heading --md">
+                  Creat A Stunning Workspace For Your Inspiration
+                </h4>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, mattis consectetuer adipiscing
+                  suspendisse et justo.
+                </p>
+              </div>
+            </a>
+            <a
+              href="blog.html"
+              class="popular__item"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <div class="popular__image image linear__bg --cyan-blue">
+                <img src="./img/popular-2.jpg" alt="" />
+              </div>
+              <div class="popular__content">
+                <p class="label">WEB DESIGN</p>
+                <h4 class="heading --sm">Designers will rule the web</h4>
+              </div>
+            </a>
+            <a
+              href="blog.html"
+              class="popular__item"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <div class="popular__image image linear__bg --yellow-cyan">
+                <img src="./img/popular-3.jpg" alt="" />
+              </div>
+              <div class="popular__content">
+                <p class="label">WEB DESIGN</p>
+                <h4 class="heading --sm">How not to design web forms</h4>
+              </div>
+            </a>
+            <a
+              href="blog.html"
+              class="popular__item"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <div class="popular__image image linear__bg --yellow-cyan">
+                <img src="./img/popular-4.jpg" alt="" />
+              </div>
+              <div class="popular__content">
+                <p class="label">WEB DESIGN</p>
+                <h4 class="heading --sm">Designers will rule the web</h4>
+              </div>
+            </a>
+            <a
+              href="blog.html"
+              class="popular__item"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <div class="popular__image image linear__bg --cyan-blue">
+                <img src="./img/popular-5.jpg" alt="" />
+              </div>
+              <div class="popular__content">
+                <p class="label">INSPIRATION</p>
+                <h4 class="heading --sm">17 web design trends for 2018</h4>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="random">
+          <div class="head">
+            <h3 class="heading --lg">Random</h3>
+          </div>
+          <a
+            href="blog.html"
+            class="random__item"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="textbox">
+              <div class="label">
+                <p><span>By</span> Jonh Someone</p>
+                <p><span>In</span> Category</p>
+              </div>
+              <h4 class="heading --md">
+                11 placing tips design plant in your house.
+              </h4>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, mattis consectetuer adipiscing
+              </p>
+            </div>
+            <div class="random__image linear__bg --green-yellow2">
+              <img src="./img/random.jpg" alt="" />
+            </div>
+          </a>
+        </section>
+        <section class="new">
+          <div class="head">
+            <h3 class="heading --lg">New</h3>
+            <a href="#" class="view-all">View all</a>
+          </div>
+          <div class="new__list">
+            <div class="new__item" data-aos="fade-up" data-aos-duration="1000">
+              <a
+                href="blog.html"
+                class="new__image image linear__bg --green-yellow"
+              >
+                <img src="./img/new-1.jpg" alt="" />
+              </a>
+              <a href="#" class="new__content textbox">
+                <div class="label">
+                  <p><span>By</span> Jonh Someone</p>
+                  <p><span>In</span> Category</p>
+                </div>
+                <h4 class="heading --sm">
+                  11 placing tips design plant in your house.
+                </h4>
+                <p class="desc --sm">
+                  Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but
+                  also the leap into electronic
+                </p>
+              </a>
+            </div>
+            <div class="new__item" data-aos="fade-up" data-aos-duration="1000">
+              <a href="#" class="new__image image linear__bg --yellow-cyan">
+                <img src="./img/new-2.jpg" alt="" />
+              </a>
+              <a href="#" class="new__content textbox">
+                <div class="label">
+                  <p><span>By</span> Jonh Someone</p>
+                  <p><span>In</span> Category</p>
+                </div>
+                <h4 class="heading --sm">
+                  18 title heading design blog trend for 2022
+                </h4>
+                <p class="desc --sm">
+                  Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but
+                  also the leap into electronic
+                </p>
+              </a>
+              blog.html
+            </div>
+            <div class="new__item" data-aos="fade-up" data-aos-duration="1000">
+              <a
+                href="blog.html"
+                class="new__image image linear__bg --cyan-blue"
+              >
+                <img src="./img/new-3.jpg" alt="" />
+              </a>
+              <a href="#" class="new__content textbox">
+                <div class="label">
+                  <p><span>By</span> Jonh Someone</p>
+                  <p><span>In</span> Category</p>
+                </div>
+                <h4 class="heading --sm">
+                  18 title heading design blog trend for 2022
+                </h4>
+                <p class="desc --sm">
+                  Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but
+                  also the leap into electronic
+                </p>
+              </a>
+            </div>
+            <div class="new__item" data-aos="fade-up" data-aos-duration="1000">
+              <a
+                href="blog.html"
+                class="new__image image linear__bg --green-yellow"
+              >
+                <img src="./img/new-4.jpg" alt="" />
+              </a>
+              <a href="#" class="new__content textbox">
+                <div class="label">
+                  <p><span>By</span> Jonh Someone</p>
+                  <p><span>In</span> Category</p>
+                </div>
+                <h4 class="heading --sm">
+                  18 title heading design blog trend for 2022
+                </h4>
+                <p class="desc --sm">
+                  Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but
+                  also the leap into electronic
+                </p>
+              </a>
+            </div>
+            <div class="new__item" data-aos="fade-up" data-aos-duration="1000">
+              <a
+                href="blog.html"
+                class="new__image image linear__bg --black-blue"
+              >
+                <img src="./img/new-5.jpg" alt="" />
+              </a>
+              <a href="#" class="new__content textbox">
+                <div class="label">
+                  <p><span>By</span> Jonh Someone</p>
+                  <p><span>In</span> Category</p>
+                </div>
+                <h4 class="heading --sm">
+                  18 title heading design blog trend for 2022
+                </h4>
+                <p class="desc --sm">
+                  Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but
+                  also the leap into electronic
+                </p>
+              </a>
+            </div>
+            <div class="new__item" data-aos="fade-up" data-aos-duration="1000">
+              <a
+                href="blog.html"
+                class="new__image image linear__bg --yellow-cyan"
+              >
+                <img src="./img/new-6.jpg" alt="" />
+              </a>
+              <a href="#" class="new__content textbox">
+                <div class="label">
+                  <p><span>By</span> Jonh Someone</p>
+                  <p><span>In</span> Category</p>
+                </div>
+                <h4 class="heading --sm">
+                  18 title heading design blog trend for 2022
+                </h4>
+                <p class="desc --sm">
+                  Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but
+                  also the leap into electronic
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="btn__wrapper">
+            <a href="#" class="btn --second">READ MORE</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div class="back2top"><img src="./img/arrow-up.svg" alt="" /></div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__info">
+              <div class="logo">
+                <a href="./">
+                  <img src="./img/logo-footer.svg" alt="" />
+                  <div class="brand">
+                    <span>Vietplant</span>
+                    <span>garden.</span>
+                  </div>
+                </a>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, mattis consectetuer adipiscing
+                suspendisse et justo. Praesent mattis ugue.
+              </p>
+            </div>
+            <div class="footer__info-2">
+              <div class="title">Open Hours</div>
+              <div class="content-1">
+                <p><span>Monday:</span> Closed</p>
+              </div>
+              <div class="content-2">
+                <p>
+                  <span>Tuesday to Friday:</span> <br />
+                  7:00 AM - 9:00 PM
+                </p>
+                <p>
+                  <span>Saturday to Sunday:</span> <br />
+                  11:00 AM - 10:00 PM
+                </p>
+              </div>
+            </div>
+            <div class="footer__info-2">
+              <div class="title">Find Us</div>
+              <div class="content-1">
+                <p>SomeUnknowInfomation</p>
+              </div>
+              <div class="content-2">
+                <p>4578 Marmora Road, Glasgow 89GR</p>
+                <p>info@vietplant.com</p>
+                <p>1-800-1234-567</p>
+                <p>+44 987-654-3210</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Copyright © 2018 Vietplant garden. | Powered by Azolia Inc.</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Detail</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
+  </head>
+
+  <!-- Mỗi body của mỗi page nên có class ví dụ homepage, aboutpage, contactpage... -->
+
+  <body class="detailpage">
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="./">
+            <img src="./img/logo.svg" alt="" />
+            <div class="brand">
+              <span>Vietplant</span>
+              <span>garden.</span>
+            </div>
+          </a>
+          <h1 class="hidden">Vietplant</h1>
+        </div>
+        <div class="right">
+          <ul class="menu">
+            <li><a href="product.html">Store</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Pages</a></li>
+            <li><a href="new.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="cart">
+              <a href="cart.html">Cart <span class="--green-cl">(2)</span></a>
+              <div class="cart__circle"></div>
+            </div>
+          </ul>
+          <div class="auth">
+            <img src="./img/setting-icon.svg" alt="" />
+            <ul class="auth__menu">
+              <li><a href="account.html" class="link">My Account</a></li>
+              <li><a href="wishlist.html" class="link">Wishlist</a></li>
+              <li><a href="#" class="link">Logout</a></li>
+            </ul>
+          </div>
+          <div class="toggle-menu">
+            <img class="open" src="./img/menu-icon.svg" alt="" />
+            <img class="close" src="./img/close-icon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav-mobile">
+      <div class="container">
+        <ul class="menu-mobile">
+          <li><a href="product.html">Store</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Pages</a></li>
+          <li><a href="new.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="cart">
+            <a href="cart.html">Cart <span class="--green-cl">(2)</span></a>
+          </div>
+        </ul>
+        <div class="auth-mobile">
+          <div class="left">
+            <a href="account.html" class="link account">My Account</a>
+            <a href="wishlist.html" class="link whishlist">Wishlist</a>
+          </div>
+          <div class="right">
+            <p class="link logout">Log Out</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="modal"></div>
+
+    <!-- MAIN -->
+    <main class="mainwrapper">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li class="breadcrumb__item">Home</li>
+          <li class="breadcrumb__item">Store</li>
+          <li class="breadcrumb__item">Office Plants</li>
+          <li class="breadcrumb__item active">Aviva In Bruine Mand</li>
+          <div class="line"></div>
+        </ul>
+      </div>
+      <section class="detail">
+        <div class="container">
+          <div class="detail__image">
+            <div class="img-group">
+              <div class="img">
+                <img src="./img/plant_9_grande.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="./img/plant_10_grande.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="./img/plant_11_grande.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="./img/plant_12_grande.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="./img/plant_13_grande.jpg" alt="" />
+              </div>
+            </div>
+            <div class="carousel">
+              <div class="carousel-cell">
+                <img src="./img/plant_9_grande.jpg" alt="" />
+              </div>
+              <div class="carousel-cell">
+                <img src="./img/plant_10_grande.jpg" alt="" />
+              </div>
+              <div class="carousel-cell">
+                <img src="./img/plant_11_grande.jpg" alt="" />
+              </div>
+              <div class="carousel-cell">
+                <img src="./img/plant_12_grande.jpg" alt="" />
+              </div>
+              <div class="carousel-cell">
+                <img src="./img/plant_13_grande.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="detail__content">
+            <h3 class="heading --md">Aviva In Bruine Mand</h3>
+            <div class="star"><img src="./img/stars.svg" alt="" /></div>
+            <div class="price --lg">
+              <span class="new">$210.00 USD</span>
+              <span class="old">$700.00</span>
+            </div>
+            <div class="options">
+              <div class="option">
+                <p class="title">SIZE</p>
+                <ul>
+                  <li>S</li>
+                  <li class="active">M</li>
+                  <li>L</li>
+                  <li>XL</li>
+                </ul>
+              </div>
+              <div class="option">
+                <p class="title">POT COLOR</p>
+                <ul>
+                  <li class="active">White</li>
+                  <li>Gray</li>
+                </ul>
+              </div>
+              <div class="option">
+                <p class="title">QUANTITY</p>
+                <ul>
+                  <li class="active">1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>More...</li>
+                </ul>
+              </div>
+            </div>
+            <div class="add">
+              <a href="#" class="btn --primary">ADD TO CART</a>
+              <div class="heart-circle">
+                <svg
+                  width="20"
+                  height="17"
+                  viewBox="0 0 20 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                    fill="#9b9b9b"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="accordion-wrapper">
+              <div class="accordion active">
+                <div class="accordion_tab active">
+                  <span>Description</span>
+                  <div class="accordion_arrow">
+                    <img src="./img/acc-icon1.svg" alt="" />
+                    <img src="./img/acc-icon2.svg" alt="" />
+                  </div>
+                </div>
+                <div class="accordion_content">
+                  <p>
+                    Lorem ipsum dolor sit amet, mattis consectetuer adipiscing
+                    suspendisse et justo. Praesent mattis ugue. When an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion_tab">
+                  <span>Custom Tab</span>
+                  <div class="accordion_arrow">
+                    <img src="./img/acc-icon1.svg" alt="" />
+                    <img src="./img/acc-icon2.svg" alt="" />
+                  </div>
+                </div>
+                <div class="accordion_content">
+                  <p>
+                    Lorem ipsum dolor sit amet, mattis consectetuer adipiscing
+                    suspendisse et justo. Praesent mattis ugue. When an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion_tab">
+                  <span>Reviews</span>
+                  <div class="accordion_arrow">
+                    <img src="./img/acc-icon1.svg" alt="" />
+                    <img src="./img/acc-icon2.svg" alt="" />
+                  </div>
+                </div>
+                <div class="accordion_content">
+                  <p>
+                    Lorem ipsum dolor sit amet, mattis consectetuer adipiscing
+                    suspendisse et justo. Praesent mattis ugue. When an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="container --overflow">
+          <h3 class="heading --md --line">
+            <span class="line"></span> <span>You Also Might Need</span>
+            <span class="line"></span>
+          </h3>
+          <div class="product__list">
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="#" class="image-2">
+                <img src="./img/plant_16_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li><img src="./img/cart-icon.svg" alt="" /></li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="#" class="image-2">
+                <img src="./img/plant_15_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li><img src="./img/cart-icon.svg" alt="" /></li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="#" class="image-2">
+                <img src="./img/plant_14_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li><img src="./img/cart-icon.svg" alt="" /></li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="#" class="image-2">
+                <img src="./img/plant_13_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li><img src="./img/cart-icon.svg" alt="" /></li>
+                <li class="heart-icon">
+                  <svg
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="#" class="image-2">
+                <img src="./img/plant_12_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li><img src="./img/cart-icon.svg" alt="" /></li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="#" class="image-2">
+                <img src="./img/plant_11_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li><img src="./img/cart-icon.svg" alt="" /></li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="#" class="image-2">
+                <img src="./img/plant_10_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li><img src="./img/cart-icon.svg" alt="" /></li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="#" class="image-2">
+                <img src="./img/plant_9_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li><img src="./img/cart-icon.svg" alt="" /></li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn__wrapper">
+            <a href="#" class="btn --primary --center">All Products</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="back2top"><img src="./img/arrow-up.svg" alt="" /></div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__info">
+              <div class="logo">
+                <a href="./">
+                  <img src="./img/logo-footer.svg" alt="" />
+                  <div class="brand">
+                    <span>Vietplant</span>
+                    <span>garden.</span>
+                  </div>
+                </a>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, mattis consectetuer adipiscing
+                suspendisse et justo. Praesent mattis ugue.
+              </p>
+            </div>
+            <div class="footer__info-2">
+              <div class="title">Open Hours</div>
+              <div class="content-1">
+                <p><span>Monday:</span> Closed</p>
+              </div>
+              <div class="content-2">
+                <p>
+                  <span>Tuesday to Friday:</span> <br />
+                  7:00 AM - 9:00 PM
+                </p>
+                <p>
+                  <span>Saturday to Sunday:</span> <br />
+                  11:00 AM - 10:00 PM
+                </p>
+              </div>
+            </div>
+            <div class="footer__info-2">
+              <div class="title">Find Us</div>
+              <div class="content-1">
+                <p>SomeUnknowInfomation</p>
+              </div>
+              <div class="content-2">
+                <p>4578 Marmora Road, Glasgow 89GR</p>
+                <p>info@vietplant.com</p>
+                <p>1-800-1234-567</p>
+                <p>+44 987-654-3210</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Copyright © 2018 Vietplant garden. | Powered by Azolia Inc.</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+  </body>
+</html>

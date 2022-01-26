@@ -1,0 +1,83 @@
+// css footer
+footer {
+  background-color: $black-cl;
+  color: #fff;
+  .footer {
+    &__top {
+      padding: 180px 0 80px;
+      .container {
+        padding: 0 80px;
+      }
+    }
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 100px;
+    }
+    &__info {
+      .logo {
+        .brand {
+          span {
+            color: #fff;
+          }
+        }
+      }
+      .desc {
+        margin-top: 65px;
+        line-height: 1.8;
+        color: #fff;
+      }
+    }
+    &__info-2 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+      span {
+        font-family: moB;
+      }
+      .title {
+        @include text(2.4rem, moSB, 1, inherit, capitalize);
+      }
+      .content-2 {
+        p {
+          line-height: 1.8;
+        }
+      }
+    }
+    &__bottom {
+      border-top: 2px solid rgba($gray-light-cl, 0.2);
+      padding: 35px 0;
+      text-align: center;
+      line-height: 1.8;
+    }
+    @include sm {
+      &__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 85px;
+      }
+      &__info {
+        .logo {
+          a {
+            img {
+              width: 54px;
+            }
+          }
+        }
+      }
+    }
+    @include xs {
+      &__top {
+        padding: 130px 0 70px;
+      }
+      &__grid {
+        grid-template-columns: 1fr;
+      }
+      &__bottom {
+        P {
+          max-width: 323px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

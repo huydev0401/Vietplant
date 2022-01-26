@@ -1,0 +1,184 @@
+// css navigator (Menu)
+.modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(#000, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  @include transition($t);
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.nav-mobile {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  @include transition(0.7s);
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    .container {
+      height: 100%;
+    }
+  }
+  .container {
+    background-color: #fff;
+    padding: var(--height-header) 20px 40px;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: initial;
+    border-radius: $r;
+    @include transition(0.7s transform);
+  }
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $gray-light-cl;
+    }
+    &:before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+    li {
+      a,
+      p {
+        display: inline-block;
+        padding: 15px 35px;
+        @include text(3.6rem, doM, 1, $black-cl, capitalize);
+        cursor: pointer;
+        @include transition($t);
+      }
+      p:hover {
+        color: $green-cl;
+      }
+      a {
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          top: calc(100% + 2px);
+          left: 0;
+          width: 100%;
+          height: 1.66px;
+          background-color: $green-cl;
+          @include transform(scale(0));
+          @include transform-origin(right);
+          @include transition($t transform);
+        }
+        &:hover {
+          &:before {
+            @include transform(scale(1));
+            @include transform-origin(left);
+          }
+          color: $green-cl;
+        }
+      }
+    }
+  }
+  .auth-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0;
+    .left {
+      .account {
+        margin-bottom: 20px;
+      }
+    }
+    .link {
+      @include text(1.8rem, doM, 1, $black-cl, capitalize);
+      cursor: pointer;
+      display: block;
+      width: fit-content;
+    }
+  }
+}
+
+.subnav {
+  padding-top: 20px;
+  border-top: 2px solid $gray-light-cl;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+  .menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    li {
+      a {
+        @include text(1.8rem, doR, 1, $gray-dark-cl, capitalize);
+      }
+    }
+  }
+  @include xs {
+    justify-content: center;
+    .menu {
+      justify-content: center;
+    }
+  }
+}
+
+.search-modal {
+  position: fixed;
+  z-index: 300;
+  opacity: 0;
+  visibility: hidden;
+  @include transform($t);
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .simple-search {
+    width: 420px;
+    display: flex;
+    button {
+      padding: 15px;
+      color: white;
+      flex-shrink: 0;
+      border-radius: 8px;
+      background-color: $green-cl;
+      margin-left: 15px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    input {
+      width: 100%;
+      padding: 15px;
+      background-color: #fafafa;
+      border-radius: 8px;
+      -webkit-appearance: none;
+      font-size: 1.4rem;
+      font-family: doR;
+    }
+  }
+}

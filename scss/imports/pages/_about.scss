@@ -1,0 +1,372 @@
+.aboutpage {
+  .hero {
+    --height-hero: 570px;
+    width: 100%;
+    height: var(--height-hero);
+    position: relative;
+    overflow: hidden;
+    &:before {
+      z-index: 1;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(360deg, #1a1a1a 0%, rgba(0, 0, 0, 0) 72.73%);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include sm {
+      --height-hero: 360px;
+    }
+  }
+  .about {
+    .container {
+      padding-top: 20px;
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      column-gap: 60px;
+      .plant-icon {
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        right: 0;
+        max-width: 377px;
+      }
+    }
+    .left {
+      .block {
+        width: 540px;
+        border-radius: $r;
+        box-shadow: $shadow-1;
+        &.--green {
+          background-color: $green-cl;
+          position: relative;
+          padding: 95px 40px 120px 80px;
+          margin-bottom: calc(var(--gap) / 2);
+          .heading {
+            @include text(6rem, doSB, 1, #fff, none);
+          }
+        }
+        &.--white {
+          background-color: #fff;
+          padding: 90px 0 180px 80px;
+          .desc {
+            max-width: 325px;
+            font-size: 1.4rem;
+            margin-top: 35px;
+          }
+        }
+      }
+    }
+    .right {
+      max-width: 640px;
+      .title {
+        margin-left: -20px;
+        margin-bottom: 65px;
+        .heading.--lg {
+          font-family: doSB;
+          margin-top: 10px;
+          text-transform: capitalize;
+        }
+      }
+      .content {
+        .heading {
+          margin-bottom: 30px;
+        }
+        .desc {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    @include md {
+      .container {
+        column-gap: 35px;
+      }
+      .left {
+        .block {
+          width: 450px;
+          &.--green {
+            padding: 75px 40px 100px 60px;
+            .heading {
+              font-size: 5rem;
+            }
+          }
+          &.--white {
+            padding: 70px 0 140px 60px;
+          }
+        }
+      }
+    }
+    @include sm {
+      .container {
+        padding-top: 65px;
+        flex-direction: column-reverse;
+        row-gap: 100px;
+      }
+      .left {
+        width: 100%;
+        .block {
+          width: 100%;
+          &.--green {
+            .heading {
+              max-width: 390px;
+              line-height: 1.5;
+            }
+          }
+          &.--white {
+            padding: 80px 0 90px 60px;
+          }
+        }
+      }
+      .right {
+        .title {
+          margin-left: initial;
+          .heading.--md {
+            font-size: 3.6rem;
+          }
+        }
+      }
+    }
+    @include xs {
+      .container {
+        padding-top: 35px;
+        row-gap: 50px;
+        & > .plant-icon {
+          display: none;
+        }
+      }
+      .right {
+        .title {
+          margin-left: initial;
+          margin-bottom: 50px;
+          .heading.--lg {
+            font-size: 3.6rem;
+          }
+        }
+        .content {
+          .desc {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      .left {
+        .block {
+          &.--green {
+            padding: 50px 40px 70px 40px;
+            .heading {
+              font-size: 3.6rem;
+              max-width: 240px;
+            }
+          }
+          &.--white {
+            padding: 50px 40px 70px 40px;
+          }
+        }
+      }
+    }
+  }
+  .about__slider {
+    --height: 705px;
+    position: relative;
+    height: var(--height);
+    .main-carousel,
+    .carousel-cell {
+      height: 100%;
+      width: 100%;
+    }
+    .flickity-viewport {
+      height: 100% !important;
+    }
+    .flickity-button,
+    .flickity-button:hover {
+      background-color: transparent;
+    }
+    .flickity-button-icon {
+      path {
+        fill: #fff;
+      }
+    }
+    .carousel-cell {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($black-cl, 0.8);
+        z-index: 3;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      &.is-selected {
+        .content {
+          @include transform(translate(-50%, -50%) scale(1));
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .content {
+        width: 990px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 5;
+        @include transform(translate(-50%, -50%) scale(0.4));
+        @include transition($t2);
+        @include transition-delay($t);
+        opacity: 0;
+        visibility: hidden;
+        .heading {
+          color: #fff;
+          font-family: doSB;
+          text-transform: none;
+        }
+        .sign {
+          margin-top: 80px;
+          color: $gray-light-cl;
+          .position {
+            font-size: 1.4rem;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+    @include md {
+      .carousel-cell {
+        .content {
+          width: 850px;
+          .heading {
+            font-size: 3.6rem;
+          }
+          .sign {
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+    @include sm {
+      --height: 738px;
+      .carousel-cell {
+        .content {
+          width: 528px;
+        }
+      }
+    }
+    @include xs {
+      --height: 624px;
+      .carousel-cell {
+        .content {
+          width: 235px;
+          .heading {
+            font-size: 2.4rem;
+          }
+          .sign {
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+  }
+  .customer {
+    .desc {
+      @include text(1.8rem, doM, 1, $gray-dark-cl, none);
+      text-align: center;
+    }
+    &__slider {
+      position: relative;
+      margin: 60px 0 120px;
+      padding: 0 80px;
+      height: 80px;
+      .main-carousel {
+        height: 100%;
+        width: 100%;
+      }
+      .carousel-cell {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        img {
+          max-width: initial;
+          border-radius: $r;
+          object-fit: cover;
+        }
+      }
+      .flickity-viewport {
+        height: 100% !important;
+      }
+      .control__btn {
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+        &.--prev {
+          left: 0;
+        }
+        &.--next {
+          right: 0;
+        }
+      }
+    }
+    @include md {
+      &__slider {
+        .carousel-cell {
+          width: 33.333%;
+        }
+      }
+    }
+    @include sm {
+      &__slider {
+        margin: 40px 0 80px;
+        height: 120px;
+        padding: 0 94px;
+        .carousel-cell {
+          width: 50%;
+          img {
+            width: 202px;
+          }
+        }
+        .control__btn {
+          &.--prev {
+            left: 40px;
+          }
+          &.--next {
+            right: 40px;
+          }
+        }
+      }
+    }
+    @include xs {
+      &__slider {
+        margin: 50px 0;
+        height: 80px;
+        .carousel-cell {
+          width: 100%;
+          img {
+            width: 160px;
+          }
+        }
+        .control__btn {
+          &.--prev {
+            left: 0;
+          }
+          &.--next {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

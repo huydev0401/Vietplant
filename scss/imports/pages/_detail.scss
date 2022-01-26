@@ -1,0 +1,255 @@
+.detailpage {
+  .mainwrapper {
+    padding-top: 200px;
+    @include sm {
+      padding-top: 140px;
+    }
+    @include xs {
+      padding-top: 120px;
+    }
+  }
+  .breadcrumb {
+    margin-bottom: 50px;
+    @include sm {
+      margin-bottom: 40px;
+    }
+    @include sm {
+      margin-bottom: 25px;
+    }
+  }
+  .detail {
+    margin-bottom: 150px;
+    .container {
+      display: grid;
+      grid-template-columns: 740px 1fr;
+      grid-gap: 40px;
+      padding: 0 45px;
+    }
+    &__image {
+      max-height: 634px;
+      display: flex;
+      background-color: #fff;
+      box-shadow: $shadow-2;
+      padding: 20px;
+      border-radius: $r;
+      .img-group {
+        width: 102px;
+        flex-shrink: 0;
+        border-right: 2px solid $gray-light-cl;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        .img {
+          flex: 1;
+          cursor: pointer;
+          border-bottom: 2px solid $gray-light-cl;
+          display: flex;
+          justify-content: center;
+          img {
+            object-fit: cover;
+          }
+        }
+      }
+      .carousel {
+        flex: 1;
+        height: 613px;
+        .flickity-viewport {
+          height: 100% !important;
+        }
+        .carousel-cell {
+          height: 100%;
+          width: 100%;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    &__content {
+      .heading {
+        font-family: doSB;
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
+      .price {
+        margin-top: 25px;
+        margin-bottom: 45px;
+      }
+      .options {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        .title {
+          @include text(1.8rem, doM, 1, $black-cl, uppercase);
+          margin-bottom: 20px;
+        }
+        ul {
+          display: flex;
+          align-items: center;
+          column-gap: 20px;
+          li {
+            @include text(1.8rem, doR, 1, $gray-light-cl, uppercase);
+            cursor: pointer;
+            &.active {
+              font-family: doSB;
+              color: $black-cl;
+            }
+          }
+        }
+      }
+      .add {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+        margin-bottom: 70px;
+        .heart-circle {
+          @include size(45px);
+          border: 1px solid $gray-cl;
+          background-color: transparent;
+          border-radius: 50%;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+      .accordion {
+        --height-acc: 50px;
+        width: 100%;
+        height: var(--height-acc);
+        overflow: hidden;
+        @include transition($t height);
+        margin-bottom: 40px;
+      }
+
+      .accordion .accordion_tab {
+        cursor: pointer;
+        user-select: none;
+        padding-bottom: 25px;
+        border-bottom: 2px solid $gray-light-cl;
+        span {
+          @include text(1.8rem, doM, 1, $black-cl, capitalize);
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .accordion .accordion_tab .accordion_arrow img {
+        &:last-child {
+          display: none;
+        }
+      }
+
+      .accordion .accordion_content p {
+        @include text(1.4rem, moM, 1.5, $black-cl, none);
+      }
+
+      .accordion .accordion_tab.active span {
+        color: $green-cl;
+      }
+
+      .accordion .accordion_tab.active .accordion_arrow img {
+        &:first-child {
+          display: none;
+        }
+        &:last-child {
+          display: block;
+        }
+      }
+
+      .accordion.active {
+        height: 180px;
+      }
+
+      .accordion .accordion_content {
+        padding-top: 20px;
+      }
+    }
+    @include md {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .accordion.active {
+        height: 130px;
+      }
+    }
+    @include sm {
+      .container {
+        padding: 0 20px;
+      }
+      &__image {
+        .carousel {
+          height: 596px;
+        }
+      }
+    }
+    @include xs {
+      margin-bottom: 100px;
+      .container {
+        padding: 0;
+      }
+      &__image {
+        max-height: initial;
+        flex-direction: column-reverse;
+        .carousel {
+          flex: initial;
+          height: 335px;
+        }
+        .img-group {
+          border-top: 1px solid $gray-light-cl;
+          padding-top: 20px;
+          flex-direction: row;
+          width: initial;
+          border-right: initial;
+          padding-right: initial;
+          flex-wrap: wrap;
+          row-gap: 20px;
+          .img {
+            flex: initial;
+            width: 33.333%;
+            position: relative;
+            border-bottom: initial;
+            &:nth-child(3):before {
+              display: none;
+            }
+            &:not(:last-child):before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 0;
+              @include transform(translateY(-50%));
+              width: 1px;
+              height: 80%;
+              background-color: $gray-light-cl;
+            }
+          }
+        }
+      }
+      &__content {
+        .heading {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .product {
+    .btn__wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    @include sm {
+      &__list {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @include xs {
+      &__list {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

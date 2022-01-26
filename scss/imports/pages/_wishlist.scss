@@ -1,0 +1,72 @@
+.wishlist {
+  &__wrapper {
+    margin-bottom: 90px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 160px;
+    background-color: #fff;
+    border-radius: $r;
+    margin-bottom: 40px;
+    box-shadow: $shadow-1;
+    .img {
+      border-radius: inherit;
+      flex-shrink: 0;
+      width: 160px;
+      img {
+        border-radius: inherit;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &.out-of {
+      .content {
+        .status {
+          color: $gray-cl;
+        }
+        .btn {
+          background-color: rgba(#73811d, 0.5);
+          pointer-events: none;
+        }
+      }
+    }
+    .content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 30px 100px 30px 30px;
+      & > * {
+        flex: 1;
+      }
+      .heading {
+        flex: 2;
+      }
+      .btn {
+        flex: initial;
+      }
+      .price,
+      .status {
+        @include text(2.4rem, doM, 1, $green-cl, none);
+      }
+    }
+  }
+  @include md {
+    &__item {
+      .content {
+        padding: 30px;
+      }
+    }
+  }
+  @include sm {
+    &__item {
+      flex-direction: column;
+      height: initial;
+      .content {
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+  }
+}

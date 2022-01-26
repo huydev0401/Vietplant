@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Blog</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
+  </head>
+
+  <!-- Mỗi body của mỗi page nên có class ví dụ homepage, aboutpage, contactpage... -->
+
+  <body class="blogpage">
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="./">
+            <img src="./img/logo.svg" alt="" />
+            <div class="brand">
+              <span>Vietplant</span>
+              <span>garden.</span>
+            </div>
+          </a>
+          <h1 class="hidden">Vietplant</h1>
+        </div>
+        <div class="right">
+          <ul class="menu">
+            <li><a href="product.html">Store</a></li>
+            <li><a href="blog.html">About</a></li>
+            <li><a href="blog.html">Pages</a></li>
+            <li><a href="new.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="cart">
+              <a href="cart.html">Cart <span class="--green-cl">(2)</span></a>
+              <div class="cart__circle"></div>
+            </div>
+          </ul>
+          <div class="auth">
+            <img src="./img/setting-icon.svg" alt="" />
+            <ul class="auth__menu">
+              <li><a href="account.html" class="link">My Account</a></li>
+              <li><a href="wishlist.html" class="link">Wishlist</a></li>
+              <li><a href="#" class="link">Logout</a></li>
+            </ul>
+          </div>
+          <div class="toggle-menu">
+            <img class="open" src="./img/menu-icon.svg" alt="" />
+            <img class="close" src="./img/close-icon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav-mobile">
+      <div class="container">
+        <ul class="menu-mobile">
+          <li><a href="product.html">Store</a></li>
+          <li><a href="blog.html">About</a></li>
+          <li><a href="blog.html">Pages</a></li>
+          <li><a href="new.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="cart">
+            <a href="cart.html">Cart <span class="--green-cl">(2)</span></a>
+          </div>
+        </ul>
+        <div class="auth-mobile">
+          <div class="left">
+            <a href="account.html" class="link account">My Account</a>
+            <a href="wishlist.html" class="link whishlist">Wishlist</a>
+          </div>
+          <div class="right">
+            <p class="link logout">Log Out</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="modal"></div>
+
+    <!-- MAIN -->
+    <main class="mainwrapper">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li class="breadcrumb__item">Home</li>
+          <li class="breadcrumb__item">News</li>
+          <li class="breadcrumb__item active">
+            Create A Stunning Workspace For Your Inspiration
+          </li>
+          <div class="line"></div>
+        </ul>
+        <div class="head-blog">
+          <h2 class="heading">
+            Creat A Stunning Workspace For Your Inspiration
+          </h2>
+          <div class="time">
+            <p>DATE JANNUARY 3, 2018</p>
+            <p>BY VLAD MAGDALIN</p>
+            <p>IN CATEGORY</p>
+          </div>
+        </div>
+      </div>
+      <div class="banner linear__bg --cyan-blue">
+        <img src="./img/blog-banner.jpg" alt="" />
+      </div>
+      <section class="blog__content">
+        <div class="container">
+          <div class="title">
+            How we consume the web changes how we design websites. Mobile
+            devices and the trend towards responsive design push designers to
+            find ways to maximize web experiences for everyone, no matter what
+            device(s) they’re using.
+          </div>
+          <p class="text">
+            While designers have played an important role, they’ve been more
+            behind the scenes. Designers have always been at odds with the web
+            development workflow, hindered by limited tools and slow-moving
+            standards.
+          </p>
+          <p class="text">
+            The next 25 years of the web will be all about design. We can make
+            significantly more progress by opening up the power of web
+            development to the masses. Similar to how desktop software once
+            transformed print design, or how blogging services have
+            revolutionized the publishing landscape, a more powerful web design
+            software can completely change how we create for the web.
+          </p>
+          <h4 class="heading --sm blog__heading">The progress paradox</h4>
+          <p class="text">
+            When I first got into web design in 1999, it only took a few months
+            of playing with Dreamweaver to learn the majority of the web
+            designer’s toolkit. Almost immediately, I felt empowered and started
+            taking on real projects for real businesses that paid me real money.
+          </p>
+          <p class="text">
+            Getting into web design today, however, is an entirely different
+            challenge. While browsers have become more standardized and
+            predictable, the learning curve for developing for them is steeper
+            than ever. HTML and CSS have expanded significantly in scope, and
+            JavaScript has become a much more vital component of most websites
+            and applications.
+          </p>
+          <div class="blog__image">
+            <img src="./img/blog-1.jpg" alt="" />
+            <p class="desc">
+              The walk signal button is just one of the many microinteractions
+              we encounter daily.
+            </p>
+          </div>
+          <p class="text">
+            Although we’ve had many frameworks and tools built around the web
+            design workflow, nearly all of them remain code-based and require a
+            level of comfort with text editors that most designers don’t have.
+            The sheer number of frameworks leads beginners towards a paradox of
+            choice, causing many to give up before understanding the
+            fundamentals.
+          </p>
+          <h4 class="heading --sm blog__heading">The progress paradox</h4>
+          <p class="text">
+            Despite the growing complexity of web development, there has been
+            almost zero progress made in visual web design tools over the last
+            10 years. All of the momentum behind Dreamweaver seems to have been
+            killed by the Adobe acquisition, and most new tools that have
+            emerged have been based on writing code. It seems that code has
+            provided a nice crutch, as if we have admitted as an industry that
+            it’s the only serious way we can create for the web.
+          </p>
+          <p class="text">
+            But why should we settle for hand-written code as being the only
+            ‘proper’ solution? For decades already, graphic designers have had
+            tools like Photoshop and Illustrator to work in their medium and rid
+            them of Bézier math and arcane details of physical typesetting.
+            Print designers have access to visual desktop publishing software
+            like InDesign. 3D artists have modeling and animation software that
+            they can manipulate directly. And yet, web designers are stuck with
+            two suboptimal choices: either learn to code or rely on programmers
+            to translate designs to a working solution. This is completely
+            broken!
+          </p>
+          <div class="sign-name">
+            <div class="avatar">
+              <img src="./img/avatar.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h4 class="heading --sm">Vlad Magdalin</h4>
+              <p>Vlad is the founder and CEO of Vietplant garden.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="like">
+        <div class="container">
+          <div class="head">
+            <h3 class="heading --lg">You might also like...</h3>
+            <a href="#" class="view-all">More</a>
+          </div>
+          <div class="new__list">
+            <div class="new__item" data-aos="fade-up" data-aos-duration="1000">
+              <a
+                href="blog.html"
+                class="new__image image linear__bg --green-yellow"
+              >
+                <img src="./img/new-1.jpg" alt="" />
+              </a>
+              <a href="#" class="new__content textbox">
+                <div class="label">
+                  <p><span>By</span> Jonh Someone</p>
+                  <p><span>In</span> Category</p>
+                </div>
+                <h4 class="heading --sm">
+                  11 placing tips design plant in your house.
+                </h4>
+                <p class="desc --sm">
+                  Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but
+                  also the leap into electronic
+                </p>
+              </a>
+            </div>
+            <div class="new__item" data-aos="fade-up" data-aos-duration="1000">
+              <a
+                href="blog.html"
+                class="new__image image linear__bg --yellow-cyan"
+              >
+                <img src="./img/new-2.jpg" alt="" />
+              </a>
+              <a href="#" class="new__content textbox">
+                <div class="label">
+                  <p><span>By</span> Jonh Someone</p>
+                  <p><span>In</span> Category</p>
+                </div>
+                <h4 class="heading --sm">
+                  18 title heading design blog trend for 2022
+                </h4>
+                <p class="desc --sm">
+                  Lorem ipsum dolor sit amet, mattis consectetuer adipiscing but
+                  also the leap into electronic
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="back2top"><img src="./img/arrow-up.svg" alt="" /></div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__info">
+              <div class="logo">
+                <a href="./">
+                  <img src="./img/logo-footer.svg" alt="" />
+                  <div class="brand">
+                    <span>Vietplant</span>
+                    <span>garden.</span>
+                  </div>
+                </a>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, mattis consectetuer adipiscing
+                suspendisse et justo. Praesent mattis ugue.
+              </p>
+            </div>
+            <div class="footer__info-2">
+              <div class="title">Open Hours</div>
+              <div class="content-1">
+                <p><span>Monday:</span> Closed</p>
+              </div>
+              <div class="content-2">
+                <p>
+                  <span>Tuesday to Friday:</span> <br />
+                  7:00 AM - 9:00 PM
+                </p>
+                <p>
+                  <span>Saturday to Sunday:</span> <br />
+                  11:00 AM - 10:00 PM
+                </p>
+              </div>
+            </div>
+            <div class="footer__info-2">
+              <div class="title">Find Us</div>
+              <div class="content-1">
+                <p>SomeUnknowInfomation</p>
+              </div>
+              <div class="content-2">
+                <p>4578 Marmora Road, Glasgow 89GR</p>
+                <p>info@vietplant.com</p>
+                <p>1-800-1234-567</p>
+                <p>+44 987-654-3210</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Copyright © 2018 Vietplant garden. | Powered by Azolia Inc.</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+  </body>
+</html>

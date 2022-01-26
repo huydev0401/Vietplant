@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Vietplant</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
+  </head>
+
+  <!-- Mỗi body của mỗi page nên có class ví dụ homepage, aboutpage, contactpage... -->
+
+  <body class="homepage">
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="./">
+            <img src="./img/logo.svg" alt="" />
+            <div class="brand">
+              <span>Vietplant</span>
+              <span>garden.</span>
+            </div>
+          </a>
+          <h1 class="hidden">Vietplant</h1>
+        </div>
+        <div class="right">
+          <ul class="menu">
+            <li><a href="product.html">Store</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Pages</a></li>
+            <li><a href="new.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="cart">
+              <a href="cart.html">Cart <span class="--green-cl">(2)</span></a>
+              <div class="cart__circle"></div>
+            </div>
+          </ul>
+          <div class="auth">
+            <img src="./img/setting-icon.svg" alt="" />
+            <ul class="auth__menu">
+              <li><a href="account.html" class="link">My Account</a></li>
+              <li><a href="wishlist.html" class="link">Wishlist</a></li>
+              <li><a href="#" class="link">Logout</a></li>
+            </ul>
+          </div>
+          <div class="toggle-menu">
+            <img class="open" src="./img/menu-icon.svg" alt="" />
+            <img class="close" src="./img/close-icon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav-mobile">
+      <div class="container">
+        <ul class="menu-mobile">
+          <li><a href="product.html">Store</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Pages</a></li>
+          <li><a href="new.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="cart">
+            <a href="cart.html">Cart <span class="--green-cl">(2)</span></a>
+          </div>
+        </ul>
+        <div class="auth-mobile">
+          <div class="left">
+            <a href="account.html" class="link account">My Account</a>
+            <a href="wishlist.html" class="link whishlist">Wishlist</a>
+          </div>
+          <div class="right">
+            <p class="link logout">Log Out</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="search-modal">
+      <div class="simple-search">
+        <input type="text" placeholder="Type here and hit Enter" />
+        <button>
+          <svg
+            width="19"
+            height="19"
+            viewBox="0 0 19 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.8968 15.5879L14.3811 12.0723C14.2171 11.9082 14.0179 11.8262 13.7835 11.8262L13.221 11.8262C14.2522 10.5137 14.7679 9.01367 14.7679 7.32617C14.7679 5.99023 14.4397 4.77148 13.7835 3.66992C13.1272 2.54492 12.2366 1.6543 11.1116 0.998047C10.01 0.341797 8.79129 0.013672 7.45535 0.013672C6.11942 0.0136719 4.88895 0.341797 3.76395 0.998047C2.66239 1.6543 1.78348 2.54492 1.12723 3.66992C0.47098 4.77148 0.142855 5.99023 0.142855 7.32617C0.142855 8.66211 0.47098 9.89258 1.12723 11.0176C1.78348 12.1191 2.66239 12.998 3.76395 13.6543C4.88895 14.3105 6.11942 14.6387 7.45535 14.6387C9.14285 14.6387 10.6429 14.123 11.9554 13.0918L11.9554 13.6543C11.9554 13.8887 12.0374 14.0879 12.2014 14.252L15.7171 17.7676C15.8811 17.9316 16.0804 18.0137 16.3147 18.0137C16.5491 18.0137 16.7483 17.9316 16.9124 17.7676L17.8968 16.7832C18.0608 16.6191 18.1429 16.4199 18.1429 16.1855C18.1429 15.9512 18.0608 15.752 17.8968 15.5879ZM7.45535 11.8262C6.63504 11.8262 5.87332 11.627 5.1702 11.2285C4.49051 10.8301 3.95145 10.291 3.55301 9.61133C3.15457 8.9082 2.95535 8.14648 2.95535 7.32617C2.95535 6.50586 3.15457 5.75586 3.55301 5.07617C3.95145 4.37305 4.49051 3.82227 5.1702 3.42383C5.87332 3.02539 6.63504 2.82617 7.45535 2.82617C8.27567 2.82617 9.02567 3.02539 9.70535 3.42383C10.4085 3.82227 10.9593 4.37305 11.3577 5.07617C11.7561 5.75586 11.9554 6.50586 11.9554 7.32617C11.9554 8.14648 11.7561 8.9082 11.3577 9.61133C10.9593 10.291 10.4085 10.8301 9.70535 11.2285C9.02567 11.627 8.27567 11.8262 7.45535 11.8262Z"
+              fill="#FFF"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="modal"></div>
+
+    <!-- MAIN -->
+    <main class="mainwrapper">
+      <section class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="container">
+                <h4 class="tag" style="--delay: 0.6s">
+                  House Plant, Office Plant
+                </h4>
+                <h2 class="heading" style="--delay: 0.4s">
+                  Chakra Crystal Healing
+                </h2>
+                <div class="price" style="--delay: 0.4s">
+                  <span class="new">$350.00</span>
+                  <span class="old">$700.00</span>
+                </div>
+                <a href="#" class="btn --primary" style="--delay: 0.6s"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+            <img
+              class="image"
+              data-flickity-lazyload="./img/slider1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="container">
+                <h4 class="tag" style="--delay: 0.6s">
+                  House Plant, Office Plant
+                </h4>
+                <h2 class="heading" style="--delay: 0.4s">
+                  Chakra Crystal Healing
+                </h2>
+                <div class="price" style="--delay: 0.4s">
+                  <span class="new">$350.00</span>
+                  <span class="old">$700.00</span>
+                </div>
+                <a href="#" class="btn --primary" style="--delay: 0.6s"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+            <img
+              class="image"
+              data-flickity-lazyload="./img/slider2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="container">
+                <h4 class="tag" style="--delay: 0.6s">
+                  House Plant, Office Plant
+                </h4>
+                <h2 class="heading" style="--delay: 0.4s">
+                  Chakra Crystal Healing
+                </h2>
+                <div class="price" style="--delay: 0.4s">
+                  <span class="new">$350.00</span>
+                  <span class="old">$700.00</span>
+                </div>
+                <a href="#" class="btn --primary" style="--delay: 0.6s"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+            <img
+              class="image"
+              data-flickity-lazyload="./img/slider3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="container">
+                <h4 class="tag" style="--delay: 0.6s">
+                  House Plant, Office Plant
+                </h4>
+                <h2 class="heading" style="--delay: 0.4s">
+                  Chakra Crystal Healing
+                </h2>
+                <div class="price" style="--delay: 0.4s">
+                  <span class="new">$350.00</span>
+                  <span class="old">$700.00</span>
+                </div>
+                <a href="#" class="btn --primary" style="--delay: 0.6s"
+                  >Buy now</a
+                >
+              </div>
+            </div>
+            <img
+              class="image"
+              data-flickity-lazyload="./img/slider4.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="slider__control">
+          <div class="container">
+            <div class="social">
+              <a href="#"><img src="./img/fb-icon.svg" alt="" /></a>
+              <a href="#"><img src="./img/instagram-icon.svg" alt="" /></a>
+              <a href="#"><img src="./img/p-icon.svg" alt="" /></a>
+              <a href="#"><img src="./img/e-icon.svg" alt="" /></a>
+            </div>
+            <div class="paging"></div>
+            <div class="control">
+              <div class="control__btn --prev">
+                <svg
+                  width="12"
+                  height="21"
+                  viewBox="0 0 12 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9531 10.4286C11.9531 10.2679 11.8728 10.0871 11.7522 9.96652L2.39062 0.604909C2.27009 0.484375 2.08929 0.404016 1.92857 0.404016C1.76786 0.404016 1.58705 0.484375 1.46652 0.604909L0.462054 1.60938C0.341518 1.72991 0.261161 1.91071 0.261161 2.07143C0.261161 2.23214 0.341518 2.41295 0.462054 2.53348L8.35714 10.4286L0.462054 18.3237C0.341518 18.4442 0.261161 18.625 0.261161 18.7857C0.261161 18.9665 0.341518 19.1272 0.462054 19.2478L1.46652 20.2522C1.58705 20.3728 1.76786 20.4531 1.92857 20.4531C2.08929 20.4531 2.27009 20.3728 2.39062 20.2522L11.7522 10.8906C11.8728 10.7701 11.9531 10.5893 11.9531 10.4286Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <div class="control__btn --next">
+                <svg
+                  width="12"
+                  height="21"
+                  viewBox="0 0 12 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9531 10.4286C11.9531 10.2679 11.8728 10.0871 11.7522 9.96652L2.39062 0.604909C2.27009 0.484375 2.08929 0.404016 1.92857 0.404016C1.76786 0.404016 1.58705 0.484375 1.46652 0.604909L0.462054 1.60938C0.341518 1.72991 0.261161 1.91071 0.261161 2.07143C0.261161 2.23214 0.341518 2.41295 0.462054 2.53348L8.35714 10.4286L0.462054 18.3237C0.341518 18.4442 0.261161 18.625 0.261161 18.7857C0.261161 18.9665 0.341518 19.1272 0.462054 19.2478L1.46652 20.2522C1.58705 20.3728 1.76786 20.4531 1.92857 20.4531C2.08929 20.4531 2.27009 20.3728 2.39062 20.2522L11.7522 10.8906C11.8728 10.7701 11.9531 10.5893 11.9531 10.4286Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container --overflow">
+        <section class="new">
+          <h3 class="heading --md --line">
+            <span class="line"></span> <span>See What’s New</span>
+            <span class="line"></span>
+          </h3>
+          <div class="new__grid">
+            <div
+              class="new__item new__item-1"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image">
+                <img src="./img/home1.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name">Mehsulun adi</a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="new__item new__item-1"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image">
+                <img src="./img/home2.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name">Mehsulun adi</a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="new__item category__item --lg"
+              data-aos="zoom-in-left"
+              data-aos-duration="1000"
+            >
+              <a href="product.html" class="image --bg">
+                <img src="./img/home3.jpg" alt="" />
+                <div class="content">
+                  <h3 class="heading --md --white">Featured Category</h3>
+                  <p class="info">Get your new plants now!</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="new__item category__item --lg"
+              data-aos="zoom-in-right"
+              data-aos-duration="1000"
+            >
+              <a href="product.html" class="image --bg">
+                <img src="./img/home4.jpg" alt="" />
+                <div class="content --right">
+                  <h3 class="heading --md --white">New Arrival</h3>
+                  <p class="info">Get your new plants now!</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="new__item new__item-1"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image">
+                <img src="./img/home5.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name">Mehsulun adi</a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="new__item new__item-1"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image">
+                <img src="./img/home6.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name">Mehsulun adi</a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="event">
+          <h3 class="heading --md --line">
+            <span class="line"></span> <span>Current Events</span>
+            <span class="line"></span>
+          </h3>
+          <div class="event__list">
+            <div
+              class="category__item --md"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <a href="new.html" class="image --bg">
+                <img src="./img/product1.jpg" alt="" />
+                <div class="content --right">
+                  <h3 class="heading --md --white">Get A Big-Dealt</h3>
+                  <p class="info">A set of 4 plants start at $20.00</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="category__item --md"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <a href="new.html" class="image --bg">
+                <img src="./img/product2.jpg" alt="" />
+                <div class="content">
+                  <h3 class="heading --md --white">Up Coming Event!</h3>
+                  <p class="info">Up Coming Event!</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="background">
+        <img src="./img/home-bg1.jpg" alt="" />
+        <p class="heading --lg --white">
+          Designed in New York, Made in <br />
+          Los Angeles, Delivered to <br />
+          Your door
+        </p>
+      </div>
+      <div class="container --overflow">
+        <section class="team">
+          <h3 class="heading --md --line">
+            <span class="line"></span> <span>Our Team</span>
+            <span class="line"></span>
+          </h3>
+          <div class="team__list">
+            <div
+              class="team__item"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+            >
+              <img src="./img/plane-icon.svg" alt="" />
+              <h4 class="title">FREE SHIPPING</h4>
+              <p class="order">ON ORDER OVER $500</p>
+            </div>
+            <div
+              class="team__item"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+            >
+              <img src="./img/ques-icon.svg" alt="" />
+              <h4 class="title">SUPPORT</h4>
+              <p class="order">ON ORDER OVER $500</p>
+            </div>
+            <div
+              class="team__item"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+            >
+              <img src="./img/hands-icon.svg" alt="" />
+              <h4 class="title">HELP PARTNER</h4>
+              <p class="order">ON ORDER OVER $500</p>
+            </div>
+            <div
+              class="team__item"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+            >
+              <img src="./img/phone-icon.svg" alt="" />
+              <h4 class="title">CONTACT WITH US</h4>
+              <p class="order">ON ORDER OVER $500</p>
+            </div>
+          </div>
+        </section>
+        <div class="product">
+          <h3 class="heading --md --line">
+            <span class="line"></span> <span>Latest Products</span>
+            <span class="line"></span>
+          </h3>
+          <ul class="menu">
+            <li class="active">All Products</li>
+            <li>Plants</li>
+            <li>Outdoor Plants Potst</li>
+            <li>Indoor Plants Pots</li>
+            <li>Growing Acessories</li>
+            <li>Flowers</li>
+          </ul>
+          <div class="product__list">
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image-2">
+                <img src="./img/plant_1_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li>
+                  <a href="cart.html"
+                    ><img src="./img/cart-icon.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image-2">
+                <img src="./img/plant_2_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li>
+                  <a href="cart.html"
+                    ><img src="./img/cart-icon.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image-2">
+                <img src="./img/plant_3_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li>
+                  <a href="cart.html"
+                    ><img src="./img/cart-icon.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image-2">
+                <img src="./img/plant_4_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li>
+                  <a href="cart.html"
+                    ><img src="./img/cart-icon.svg" alt=""
+                  /></a>
+                </li>
+                <li class="heart-icon">
+                  <svg
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image-2">
+                <img src="./img/plant_5_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li>
+                  <a href="cart.html"
+                    ><img src="./img/cart-icon.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image-2">
+                <img src="./img/plant_6_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li>
+                  <a href="cart.html"
+                    ><img src="./img/cart-icon.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image-2">
+                <img src="./img/plant_7_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li>
+                  <a href="cart.html"
+                    ><img src="./img/cart-icon.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="product__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="detail.html" class="image-2">
+                <img src="./img/plant_8_grande.jpg" alt="" />
+              </a>
+              <div class="content">
+                <a href="#" class="plant__name"><h4>House Shape Close</h4></a>
+                <div class="price">
+                  <span>$8.00</span>
+                  <span class="old">$12.00</span>
+                </div>
+              </div>
+              <ul class="act__list">
+                <li>
+                  <a href="cart.html"
+                    ><img src="./img/cart-icon.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <svg
+                    class="heart-icon"
+                    width="20"
+                    height="17"
+                    viewBox="0 0 20 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.385 1.34668C16.7522 0.807617 16.0374 0.467774 15.2405 0.327149C14.4436 0.186524 13.6585 0.245117 12.885 0.50293C12.1116 0.760742 11.4319 1.19434 10.846 1.80371L10.1429 2.50684L9.43973 1.80371C8.85379 1.19434 8.1741 0.760742 7.40067 0.50293C6.62723 0.245117 5.84207 0.186523 5.0452 0.327148C4.24832 0.467773 3.53348 0.807617 2.90067 1.34668C2.1741 1.95605 1.6702 2.70605 1.38895 3.59668C1.1077 4.4873 1.06082 5.38965 1.24832 6.30371C1.45926 7.19434 1.89285 7.97949 2.5491 8.65918L9.33426 15.6553C9.56864 15.8896 9.83817 16.0068 10.1429 16.0068C10.4475 16.0068 10.7171 15.8896 10.9514 15.6553L17.7366 8.62402C18.3929 7.96777 18.8147 7.19434 19.0022 6.30371C19.2132 5.38965 19.178 4.4873 18.8968 3.59668C18.6155 2.70605 18.1116 1.95605 17.385 1.34668Z"
+                      fill="#4B4B4B"
+                    />
+                  </svg>
+                </li>
+                <li class="search__icon">
+                  <img src="./img/search-icon.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn__wrapper">
+            <a href="product.html" class="btn --primary --center"
+              >All Products</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="background --black">
+        <img src="./img/home-bg1.jpg" alt="" />
+        <p class="heading --lg --white">
+          The most important things <br />
+          are not things so we’ll <br />
+          design experiences.
+        </p>
+      </div>
+      <div class="container --overflow">
+        <section class="service">
+          <h3 class="heading --md --line">
+            <span class="line"></span> <span>Our Services</span>
+            <span class="line"></span>
+          </h3>
+          <p class="desc">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt
+          </p>
+          <div class="service__list">
+            <div
+              class="service__item"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            >
+              <span class="state">STANDARD</span>
+              <img src="./img/service1.svg" alt="" class="img" />
+              <h3 class="price">$39.99</h3>
+              <div class="feature">
+                <p><span>FIRST</span> FEATURE</p>
+                <p><span>SECOND</span> FEATURE</p>
+                <p><span>THIRD</span> FEATURE</p>
+              </div>
+              <div class="circle"><img src="./img/plus-icon.svg" alt="" /></div>
+            </div>
+            <div
+              class="service__item active"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            >
+              <span class="state">UNLIMITED</span>
+              <img src="./img/service2.svg" alt="" class="img" />
+              <h3 class="price">$79.99</h3>
+              <div class="feature">
+                <p><span>FIRST</span> FEATURE</p>
+                <p><span>SECOND</span> FEATURE</p>
+                <p><span>THIRD</span> FEATURE</p>
+                <p><span>UNLIMITED</span> FEATURE</p>
+              </div>
+              <div class="circle"><img src="./img/plus-icon.svg" alt="" /></div>
+            </div>
+            <div
+              class="service__item --detail"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            >
+              <span class="state">EACH PACK INCLUDES</span>
+              <div class="feature">
+                <div class="feature__item">
+                  <img src="./img/check-icon.svg" alt="" />
+                  <p>
+                    <span>FIRST</span>
+                    FEATURE
+                  </p>
+                </div>
+                <div class="feature__item">
+                  <img src="./img/check-icon.svg" alt="" />
+                  <p>
+                    <span>SECOND</span>
+                    FEATURE
+                  </p>
+                </div>
+                <div class="feature__item">
+                  <img src="./img/check-icon.svg" alt="" />
+                  <p>
+                    <span>THIRD</span>
+                    FEATURE
+                  </p>
+                </div>
+                <div class="feature__item">
+                  <img src="./img/check-icon.svg" alt="" />
+                  <p>
+                    <span>FOURTH</span>
+                    FEATURE
+                  </p>
+                </div>
+                <div class="feature__item">
+                  <img src="./img/check-icon.svg" alt="" />
+                  <p>
+                    <span>FIFTH</span>
+                    FEATURE
+                  </p>
+                </div>
+              </div>
+              <div class="commit">
+                <div class="top">
+                  <div class="circle">
+                    <img src="./img/user-icon.svg" alt="" />
+                  </div>
+                  <div class="user-info">
+                    <h4 class="name">Name Surname</h4>
+                    <p class="title">Tilte & CEO Vietplant.</p>
+                  </div>
+                </div>
+                <p class="bottom">
+                  Natus error sit voluptartem accusantium doloremque laudantium,
+                  totam aperiam, eaque ipsa quae ab illo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe-form">
+            <h4 class="newsletter">
+              NEWSLETTER <br />
+              TO GET IN TOUCH
+            </h4>
+            <input class="input" type="email" placeholder="Enter your e-mail" />
+            <a href="#" class="btn --second">Subscribe</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div class="back2top"><img src="./img/arrow-up.svg" alt="" /></div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__info">
+              <div class="logo">
+                <a href="./">
+                  <img src="./img/logo-footer.svg" alt="" />
+                  <div class="brand">
+                    <span>Vietplant</span>
+                    <span>garden.</span>
+                  </div>
+                </a>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, mattis consectetuer adipiscing
+                suspendisse et justo. Praesent mattis ugue.
+              </p>
+            </div>
+            <div class="footer__info-2">
+              <div class="title">Open Hours</div>
+              <div class="content-1">
+                <p><span>Monday:</span> Closed</p>
+              </div>
+              <div class="content-2">
+                <p>
+                  <span>Tuesday to Friday:</span> <br />
+                  7:00 AM - 9:00 PM
+                </p>
+                <p>
+                  <span>Saturday to Sunday:</span> <br />
+                  11:00 AM - 10:00 PM
+                </p>
+              </div>
+            </div>
+            <div class="footer__info-2">
+              <div class="title">Find Us</div>
+              <div class="content-1">
+                <p>SomeUnknowInfomation</p>
+              </div>
+              <div class="content-2">
+                <p>4578 Marmora Road, Glasgow 89GR</p>
+                <p>info@vietplant.com</p>
+                <p>1-800-1234-567</p>
+                <p>+44 987-654-3210</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Copyright © 2018 Vietplant garden. | Powered by Azolia Inc.</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+  </body>
+</html>

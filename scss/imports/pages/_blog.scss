@@ -1,0 +1,121 @@
+.blogpage {
+  .mainwrapper {
+    padding-top: 150px;
+    @include sm {
+      padding-top: 140px;
+    }
+    @include xs {
+      padding-top: 115px;
+    }
+  }
+  .breadcrumb {
+    margin-bottom: 60px;
+  }
+  .head-blog {
+    .heading {
+      @include text(6.4rem, doSB, normal, $black-cl, capitalize);
+      max-width: 814px;
+      margin-bottom: 50px;
+    }
+    .time {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      row-gap: 20px;
+      p {
+        @include text(1.4rem, doSB, 1, $black-cl, uppercase);
+        &:nth-child(2) {
+          border-left: 2px solid $black-cl;
+          border-right: 2px solid $black-cl;
+          padding: 0 15px;
+          margin: 0 15px;
+        }
+      }
+    }
+    @include sm {
+      .heading {
+        font-size: 4.8rem;
+      }
+    }
+    @include xs {
+      .heading {
+        font-size: 3.6rem;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .banner {
+    margin: 90px 0;
+    img {
+      height: 650px;
+      width: 100%;
+      object-fit: cover;
+    }
+    @include sm {
+      img {
+        height: 354px;
+      }
+    }
+    @include xs {
+      margin: 50px 0;
+      img {
+        height: 200px;
+      }
+    }
+  }
+  .blog {
+    &__content {
+      --mg: 50px;
+      .container {
+        padding: 0 200px;
+      }
+      .title {
+        @include text(1.8rem, moSB, 1.5, $black-cl, none);
+        margin-bottom: 70px;
+      }
+      .blog__heading {
+        margin-bottom: var(--mg);
+      }
+      .text {
+        @include text(1.8rem, moR, 1.5, $black-cl, none);
+        margin-bottom: var(--mg);
+      }
+      .blog__image {
+        border-radius: $r;
+        text-align: center;
+        margin-bottom: var(--mg);
+        .desc {
+          margin-top: 20px;
+          @include text(1.4rem, moSB, 1.5, $black-cl, none);
+        }
+        img {
+          border-radius: inherit;
+          height: 450px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    @include sm {
+      &__content {
+        .container {
+          padding: 0 100px;
+        }
+      }
+    }
+    @include xs {
+      &__content {
+        --mg: 35px;
+        .container {
+          padding: initial;
+        }
+      }
+    }
+  }
+  .like {
+    margin: 90px 0;
+    @include xs {
+      margin: 70px 0;
+    }
+  }
+}
